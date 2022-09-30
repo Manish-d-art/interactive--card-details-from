@@ -6,4 +6,8 @@
 
 .card .card__section1 {
   background-image: url("/assets/images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
