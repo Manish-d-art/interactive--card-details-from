@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card .card__section1 {
+  background-image: url("/assets/images/bg-main-mobile.png");
+}/*# sourceMappingURL=main.css.map */
