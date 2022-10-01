@@ -33,11 +33,6 @@
     width: 400px;
     height: 220px;
   }
-  .card .card__section1 .card__picture1 .card__section1-text {
-    transform: translate(327px, 100px) !important;
-    font-size: 1rem;
-    display: inline-block;
-  }
 }
 @media (max-width: 360px) {
   .card .card__section1 .card__picture1 {
@@ -45,16 +40,25 @@
     height: 150px;
     transform: translate(14px, 10px);
   }
-  .card .card__section1 .card__picture1 .card__section1-text {
-    transform: translate(200px, 66px) !important;
-    display: inline-block;
-  }
 }
-.card .card__section1 .card__picture1 .card__section1-text {
+.card .card__section1 .card__picture1 .card__text1 {
   position: relative;
   transform: translate(245px, 76px);
   color: white;
   display: inline-block;
+}
+@media (max-width: 360px) {
+  .card .card__section1 .card__picture1 .card__text1 {
+    transform: translate(200px, 66px) !important;
+    display: inline-block;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .card .card__section1 .card__picture1 .card__text1 {
+    transform: translate(327px, 100px) !important;
+    font-size: 1rem;
+    display: inline-block;
+  }
 }
 .card .card__section1 .card__picture2 {
   position: absolute;
@@ -91,4 +95,14 @@
   .card .card__section1 .card__picture2 .card-logo {
     width: 50px !important;
   }
+}
+.card .card__section1 .card__picture2 .card__text2 {
+  display: inline-block;
+  color: wheat;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  transform: translateY(60px);
 }/*# sourceMappingURL=main.css.map */

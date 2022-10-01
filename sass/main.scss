@@ -36,12 +36,6 @@
         transform: translate(100px,10px);
         width: 400px;
         height: 220px;
-
-        .card__section1-text{
-          transform: translate(327px, 100px) !important;
-          font-size: 1rem;
-          display: inline-block;
-        }
       }
 
       @media (max-width:360px) {
@@ -49,17 +43,25 @@
         height: 150px;
         transform: translate(14px,10px);
 
-        .card__section1-text{
-          transform: translate(200px,66px) !important;
-          display: inline-block;
-        }
+       
       }
 
-      .card__section1-text{
+      .card__text1{
         position: relative;
         transform: translate(245px,76px);
         color:white;
         display: inline-block;
+
+        @media (max-width:360px){
+          transform: translate(200px,66px) !important;
+          display: inline-block;
+        }
+
+        @media (min-width:600px) and (max-width:992px){
+          transform: translate(327px, 100px) !important;
+          font-size: 1rem;
+          display: inline-block;
+        }
       }
     }
     .card__picture2{
@@ -93,6 +95,17 @@
         @media (max-width:360px) {
           width:50px !important;
         }
+      }
+
+      .card__text2{
+        display: inline-block;
+        color: wheat;
+        letter-spacing: 3px;
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        transform: translateY(60px);
       }
     }
   }
