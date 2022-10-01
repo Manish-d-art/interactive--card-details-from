@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .card .card__section1 {
@@ -43,19 +45,19 @@
 }
 .card .card__section1 .card__picture1 .card__text1 {
   position: relative;
-  transform: translate(245px, 76px);
+  transform: translate(237px, 73px);
   color: white;
   display: inline-block;
 }
 @media (max-width: 360px) {
   .card .card__section1 .card__picture1 .card__text1 {
-    transform: translate(200px, 66px) !important;
+    transform: translate(195px, 64px) !important;
     display: inline-block;
   }
 }
 @media (min-width: 600px) and (max-width: 992px) {
   .card .card__section1 .card__picture1 .card__text1 {
-    transform: translate(327px, 100px) !important;
+    transform: translate(318px, 98px) !important;
     font-size: 1rem;
     display: inline-block;
   }
@@ -99,10 +101,23 @@
 .card .card__section1 .card__picture2 .card__text2 {
   display: inline-block;
   color: wheat;
-  letter-spacing: 3px;
-  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
   width: 100%;
   text-align: center;
   position: relative;
   transform: translateY(60px);
+  font-weight: 500;
+}
+@media (max-width: 360px) {
+  .card .card__section1 .card__picture2 .card__text2 {
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .card .card__section1 .card__picture2 .card__text2 {
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
