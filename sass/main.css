@@ -81,4 +81,14 @@
     width: 240px;
     height: 150px;
   }
+}
+.card .card__section1 .card__picture2 .card-logo {
+  width: 60px;
+  position: relative;
+  transform: translate(20px, 20px);
+}
+@media (max-width: 360px) {
+  .card .card__section1 .card__picture2 .card-logo {
+    width: 50px !important;
+  }
 }/*# sourceMappingURL=main.css.map */

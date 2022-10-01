@@ -84,6 +84,16 @@
         width: 240px;
         height: 150px;
       }
+
+      .card-logo{
+        width:60px;
+        position: relative;
+        transform: translate(20px,20px);
+
+        @media (max-width:360px) {
+          width:50px !important;
+        }
+      }
     }
   }
 }
