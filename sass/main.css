@@ -290,4 +290,25 @@
   .card .card__section2 form .card__date-cvc-input #cvc {
     width: 190px !important;
   }
+}
+.card .card__section2 form #btn {
+  all: unset;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  width: 311px;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+@media (max-width: 360px) {
+  .card .card__section2 form #btn {
+    width: 250px !important;
+  }
+}
+@media (min-width: 600px) {
+  .card .card__section2 form #btn {
+    width: 350px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
