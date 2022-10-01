@@ -55,6 +55,13 @@
     transform: translate(14px, 10px);
   }
 }
+@media (min-width: 992px) {
+  .card .card__section1 .card__picture1 {
+    transform: translate(195px, 115px) !important;
+    width: 400px;
+    height: 224px;
+  }
+}
 .card .card__section1 .card__picture1 .card__text1 {
   position: relative;
   transform: translate(237px, 73px);
@@ -67,7 +74,7 @@
     display: inline-block;
   }
 }
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 600px) {
   .card .card__section1 .card__picture1 .card__text1 {
     transform: translate(318px, 98px) !important;
     font-size: 1rem;
@@ -100,6 +107,13 @@
     height: 150px;
   }
 }
+@media (min-width: 992px) {
+  .card .card__section1 .card__picture2 {
+    transform: translate(116px, -150px) !important;
+    width: 400px;
+    height: 224px;
+  }
+}
 .card .card__section1 .card__picture2 .card-logo {
   width: 60px;
   position: relative;
@@ -108,6 +122,11 @@
 @media (max-width: 360px) {
   .card .card__section1 .card__picture2 .card-logo {
     width: 50px !important;
+  }
+}
+@media (min-width: 992px) {
+  .card .card__section1 .card__picture2 .card-logo {
+    width: 77px !important;
   }
 }
 .card .card__section1 .card__picture2 .card__text2 {
@@ -127,10 +146,11 @@
     font-size: 1rem;
   }
 }
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 600px) {
   .card .card__section1 .card__picture2 .card__text2 {
     letter-spacing: 3px;
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
 }
 .card .card__section1 .card__picture2 .card-details {
@@ -151,9 +171,10 @@
     padding: 0 1rem !important;
   }
 }
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 600px) {
   .card .card__section1 .card__picture2 .card-details {
     padding: 0 2.5rem !important;
+    margin-top: 1.2rem;
   }
 }
 .card .card__section2 {
@@ -169,7 +190,12 @@
 }
 @media (min-width: 992px) {
   .card .card__section2 {
-    width: 48%;
+    width: 63%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1175px) {
+  .card .card__section2 {
+    justify-content: end !important;
   }
 }
 .card .card__section2 label {
@@ -313,11 +339,12 @@
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(278deg, 68%, 11%);
   width: 311px;
-  height: 70px;
+  height: 60px;
   border-radius: 10px;
   text-align: center;
   font-size: 1.1rem;
   cursor: pointer;
+  margin-top: 1rem;
 }
 @media (max-width: 360px) {
   .card .card__section2 form #btn {
@@ -327,5 +354,6 @@
 @media (min-width: 600px) {
   .card .card__section2 form #btn {
     width: 350px !important;
+    height: 55px !important;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -58,10 +58,15 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         width: 240px;
         height: 150px;
         transform: translate(14px,10px);
-
-       
       }
 
+      @media (min-width:992px) {
+        transform: translate(195px, 115px) !important;
+        width: 400px;
+        height: 224px;
+      }
+
+     
       .card__text1{
         position: relative;
         transform: translate(237px,73px);
@@ -73,7 +78,9 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           display: inline-block;
         }
 
-        @media (min-width:600px) and (max-width:992px){
+        @media (min-width:600px) 
+        // and (max-width:992px)
+        {
           transform: translate(318px, 98px) !important;
           font-size: 1rem;
           display: inline-block;
@@ -104,6 +111,13 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         height: 150px;
       }
 
+      @media (min-width:992px) {
+        transform: translate(116px, -150px) !important;
+        width: 400px;
+        height: 224px;
+      }
+
+
       .card-logo{
         width:60px;
         position: relative;
@@ -111,6 +125,9 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 
         @media (max-width:360px) {
           width:50px !important;
+        }
+        @media (min-width:992px) {
+          width:77px !important;
         }
       }
 
@@ -128,9 +145,11 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           letter-spacing: 2px;
           font-size: 1rem;
         }
-        @media (min-width:600px) and (max-width:992px){
+        @media (min-width:600px) 
+        {
           letter-spacing: 3px;
           font-size: 1.5rem;
+          margin-top: 1rem;
         }
       }
 
@@ -150,8 +169,11 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         @media (max-width:360px){
            padding: 0 1rem !important;
         }
-        @media (min-width:600px) and (max-width:992px){
+        @media (min-width:600px)
+        //  and (max-width:992px)
+         {
            padding: 0 2.5rem !important;
+           margin-top: 1.2rem;
         }
        }
     }
@@ -167,12 +189,14 @@ $Very-dark-violet: hsl(278, 68%, 11%);
    
       }
     @media (min-width:992px) {
-      width: 48%;
+      width: 63%;
+    }
+
+    @media (min-width:992px) and (max-width:1175px) {
+      justify-content: end !important;
       
     }
    
-      
-    
     label{
       font-size: 12px;
       letter-spacing: 2px;
@@ -290,17 +314,19 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         color:$White;
         background-color: $Very-dark-violet;
         width:311px;
-        height:70px;
+        height:60px;
         border-radius: 10px;
         text-align: center;
         font-size: 1.1rem;
         cursor: pointer;
+        margin-top: 1rem;
 
         @media (max-width:360px) {
           width: 250px !important;
         }
         @media (min-width:600px) {
           width: 350px !important;
+          height: 55px !important;
         }
         
       }
