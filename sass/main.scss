@@ -57,7 +57,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       .card__text1{
         position: relative;
         transform: translate(237px,73px);
-        color:white;
+        color:$Light-grayish-violet;
         display: inline-block;
 
         @media (max-width:360px){
@@ -107,7 +107,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 
       .card__text2{
         display: inline-block;
-        color: wheat;
+        color: $Light-grayish-violet;
         letter-spacing: 2px;
         font-size: 1.2rem;
         width: 100%;
@@ -124,6 +124,29 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           font-size: 1.5rem;
         }
       }
+
+      .card-details{
+        display: inline-block;
+        width: 100%;
+        padding: 0 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $Light-grayish-violet;
+        position: relative;
+        transform: translatey(75px);
+
+        @media (max-width:360px){
+          padding: 0 1rem !important;
+        }
+        @media (min-width:600px) and (max-width:992px){
+        padding: 0 2.5rem !important;
+        }
+
+
+       }
     }
   }
 }
