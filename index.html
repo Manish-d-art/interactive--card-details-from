@@ -21,9 +21,7 @@
     <div class="card__section1">
 
       <div class="card__picture1">
-        <p class="card__text1">
-          000
-        </p>
+        <p class="card__text1">000</p>
       </div>
 
       <div class="card__picture2">
@@ -40,24 +38,34 @@
     </div>
 
     <div class="card__section2">
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholer="Cardholder Name"><br>
+        <label for="card-number">card number</label><br>
+        <input id="number" id="card-number" type="number" placeholder="e.g. 1234 5678 9123 0000"/>
+        <div class="card__date-cvc-label">
+          <label for="exp-date" id="exp-date">Exp. Date (MM/YY)</label>
+          <label for="cvc">CVC</label>
+        </div>
+        <div class="card__date-cvc-input">
+          <input type="text" name="month" id="month" placeholder="MM" maxlength="19">
+          <input type="text" name="year" id="year" placeholder="YY" maxlength="2">
+          <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3">
+        </div>
 
+      </form>
     </div>
 
   </main>
 
 <!-- 
-  
-  
-  
-  
-
   000
 
-  Cardholder Name
+  
   e.g. Jane Appleseed
 
   Card Number
-  e.g. 1234 5678 9123 0000
+  
 
   Exp. Date (MM/YY)
   MM
