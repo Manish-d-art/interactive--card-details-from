@@ -36,19 +36,37 @@
         transform: translate(100px,10px);
         width: 400px;
         height: 220px;
+
+        .card__section1-text{
+          transform: translate(327px, 100px) !important;
+          font-size: 1rem;
+          display: inline-block;
+        }
       }
 
       @media (max-width:360px) {
         width: 240px;
         height: 150px;
         transform: translate(14px,10px);
+
+        .card__section1-text{
+          transform: translate(200px,66px) !important;
+          display: inline-block;
+        }
+      }
+
+      .card__section1-text{
+        position: relative;
+        transform: translate(245px,76px);
+        color:white;
+        display: inline-block;
       }
     }
     .card__picture2{
       position: absolute;
       z-index: 2;
       border-radius: 5px;
-      transform: translate(-26px,97px);
+      transform: translate(-26px,96px);
       width: 300px;
       height: 170px;
       background-image: url('/assets/images/bg-card-front.png');
@@ -57,7 +75,7 @@
       background-position: center;
 
       @media (min-width:600px) and (max-width:992px) {
-        transform: translate(-40px,136px);
+        transform: translate(-40px,135px);
         width: 400px;
         height: 220px;
       }
