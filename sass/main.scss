@@ -15,10 +15,18 @@ $Dark-grayish-violet: hsl(279, 6%, 55%);
 $Very-dark-violet: hsl(278, 68%, 11%);
 
 .card{
- 
+  
+  @media (min-width:992px) {
+    display: flex;
+  }
 
   .card__section1{
     background-image: url("/assets/images/bg-main-mobile.png");
+    @media (min-width:992px) {
+      background-image: url('/assets/images/bg-main-desktop.png');
+      height: 100vh !important;
+      width: 441px;
+    }
     background-size: cover;
     background-repeat: no-repeat;
     height: 35vh;
@@ -155,11 +163,15 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     align-items: center;
     justify-content: center;
     @media (max-width:360px) {
-    padding:8rem 1rem !important;
-
+       padding:8rem 1rem !important;
    
+      }
+    @media (min-width:992px) {
+      width: 48%;
       
     }
+   
+      
     
     label{
       font-size: 12px;

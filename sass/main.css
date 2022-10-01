@@ -6,6 +6,11 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+  }
+}
 .card .card__section1 {
   background-image: url("/assets/images/bg-main-mobile.png");
   background-size: cover;
@@ -16,6 +21,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .card .card__section1 {
+    background-image: url("/assets/images/bg-main-desktop.png");
+    height: 100vh !important;
+    width: 441px;
+  }
 }
 .card .card__section1 .card__picture1 {
   position: absolute;
@@ -153,6 +165,11 @@
 @media (max-width: 360px) {
   .card .card__section2 {
     padding: 8rem 1rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .card .card__section2 {
+    width: 48%;
   }
 }
 .card .card__section2 label {
