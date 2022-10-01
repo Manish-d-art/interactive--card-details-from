@@ -79,6 +79,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       transform: translate(-26px,96px);
       width: 300px;
       height: 170px;
+      
       background-image: url('/assets/images/bg-card-front.png');
       background-size: cover;
       background-repeat: no-repeat;
@@ -146,5 +147,82 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
        }
     }
+  }
+
+  .card__section2{
+    padding:8rem 2rem;
+    
+    label{
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color:$Very-dark-violet;
+    }
+    ::placeholder{
+      color:rgb(211, 205, 205);
+    }
+    form{
+      
+      #fname{
+        width: 311px;
+        height: 45px;
+        margin: .5rem 0 1.3rem;
+        padding-left:.6rem;
+        font-size: 1.1rem;
+        color:$Dark-grayish-violet;
+        border: .5px solid $Dark-grayish-violet;
+        border-radius: 5px;
+      }
+      #card-number{
+        width: 311px;
+        height: 45px;
+        margin: .5rem 0 1.3rem;
+        padding-left:.5rem;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color:$Dark-grayish-violet;
+        border: .5px solid $Dark-grayish-violet;
+        border-radius: 8px;
+      }
+
+      .card__date-cvc-label{
+        width:190px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .card__date-cvc-input{
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem 0 1.3rem;
+        width: 315px;
+
+        #month{
+        width:70px;
+        height: 45px;
+        font-size: 1.1rem;
+        text-align: center;
+        border: .5px solid $Dark-grayish-violet;
+        border-radius: 8px;
+        }
+        #year{
+          width:70px;
+          height: 45px;
+          font-size: 1.1rem;
+          text-align: center;
+          border: .5px solid $Dark-grayish-violet;
+          border-radius: 8px;
+        }
+        #cvc{
+          padding-left:.6rem;
+           font-size: 1.1rem;
+           width: 150px;
+          height: 45px;
+          border: .5px solid $Dark-grayish-violet;
+          border-radius: 8px;
+        }
+      }
+
+    }
+      
   }
 }

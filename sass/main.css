@@ -143,4 +143,78 @@
   .card .card__section1 .card__picture2 .card-details {
     padding: 0 2.5rem !important;
   }
+}
+.card .card__section2 {
+  padding: 8rem 2rem;
+}
+.card .card__section2 label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: hsl(278deg, 68%, 11%);
+}
+.card .card__section2 ::-moz-placeholder {
+  color: rgb(211, 205, 205);
+}
+.card .card__section2 :-ms-input-placeholder {
+  color: rgb(211, 205, 205);
+}
+.card .card__section2 ::placeholder {
+  color: rgb(211, 205, 205);
+}
+.card .card__section2 form #fname {
+  width: 311px;
+  height: 45px;
+  margin: 0.5rem 0 1.3rem;
+  padding-left: 0.6rem;
+  font-size: 1.1rem;
+  color: hsl(279deg, 6%, 55%);
+  border: 0.5px solid hsl(279deg, 6%, 55%);
+  border-radius: 5px;
+}
+.card .card__section2 form #card-number {
+  width: 311px;
+  height: 45px;
+  margin: 0.5rem 0 1.3rem;
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: hsl(279deg, 6%, 55%);
+  border: 0.5px solid hsl(279deg, 6%, 55%);
+  border-radius: 8px;
+}
+.card .card__section2 form .card__date-cvc-label {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card__section2 form .card__date-cvc-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0 1.3rem;
+  width: 315px;
+}
+.card .card__section2 form .card__date-cvc-input #month {
+  width: 70px;
+  height: 45px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 0.5px solid hsl(279deg, 6%, 55%);
+  border-radius: 8px;
+}
+.card .card__section2 form .card__date-cvc-input #year {
+  width: 70px;
+  height: 45px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 0.5px solid hsl(279deg, 6%, 55%);
+  border-radius: 8px;
+}
+.card .card__section2 form .card__date-cvc-input #cvc {
+  padding-left: 0.6rem;
+  font-size: 1.1rem;
+  width: 150px;
+  height: 45px;
+  border: 0.5px solid hsl(279deg, 6%, 55%);
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
