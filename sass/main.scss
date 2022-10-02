@@ -191,6 +191,9 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     @media (min-width:992px) {
       width: 63%;
     }
+    @media (max-width:992px) and (min-width:600px) {
+      padding: 12rem 2rem !important;      
+    }
 
     @media (min-width:992px) and (max-width:1175px) {
       justify-content: end !important;
