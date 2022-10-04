@@ -361,4 +361,11 @@
     width: 350px !important;
     height: 55px !important;
   }
+}
+
+.error-name {
+  position: relative;
+  top: -15px;
+  color: hsl(0deg, 100%, 66%);
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

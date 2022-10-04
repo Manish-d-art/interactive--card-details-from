@@ -7,6 +7,8 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+//primary
+$Red-errors: hsl(0, 100%, 66%);
 
 //neutral
 $White: hsl(0, 0%, 100%);
@@ -337,4 +339,12 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     }
       
   }
+}
+
+// js
+.error-name{
+  position: relative;
+  top:-15px;
+  color: $Red-errors;
+  font-size: 13px;
 }
