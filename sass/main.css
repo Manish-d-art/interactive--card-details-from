@@ -218,7 +218,7 @@
 .card .card__section2 ::placeholder {
   color: rgb(211, 205, 205);
 }
-.card .card__section2 form #fname {
+.card .card__section2 form #name {
   width: 311px;
   height: 45px;
   margin: 0.5rem 0 1.1rem;
@@ -229,12 +229,12 @@
   border-radius: 5px;
 }
 @media (max-width: 360px) {
-  .card .card__section2 form #fname {
+  .card .card__section2 form #name {
     width: 250px !important;
   }
 }
 @media (min-width: 600px) {
-  .card .card__section2 form #fname {
+  .card .card__section2 form #name {
     width: 350px !important;
   }
 }
