@@ -14,3 +14,6 @@ const errorYear=document.querySelector('.error-year');
 
 const cvc=document.querySelector('#cvc');
 const errorCVC=document.querySelector('.error-cvc');
+
+const formFillUp=document.querySelector('.form-fill-up');
+const cradCompleteState=document.querySelector('.card-complete-state');
