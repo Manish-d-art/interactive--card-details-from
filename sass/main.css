@@ -331,13 +331,13 @@
 }
 .card .card__section2 form #btn {
   all: unset;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(270deg, 3%, 87%);
   background-color: hsl(278deg, 68%, 11%);
   width: 311px;
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
 }
@@ -349,7 +349,7 @@
 @media (min-width: 600px) {
   .card .card__section2 form #btn {
     width: 350px !important;
-    height: 55px !important;
+    height: 50px !important;
   }
 }
 
@@ -419,11 +419,16 @@
 }
 
 .card__complete-state {
-  width: 100%;
+  display: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 992px) and (max-width: 1175px) {
+  .card__complete-state {
+    justify-content: end !important;
+  }
 }
 .card__complete-state .complete-icon {
   width: 100%;
@@ -440,15 +445,15 @@
 }
 .card__complete-state .complete-state-Btn {
   all: unset;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(270deg, 3%, 87%);
   background-color: hsl(278deg, 68%, 11%);
   width: 311px;
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 2.5rem 0;
 }
 @media (max-width: 360px) {
   .card__complete-state .complete-state-Btn {
@@ -458,6 +463,5 @@
 @media (min-width: 600px) {
   .card__complete-state .complete-state-Btn {
     width: 350px !important;
-    height: 55px !important;
   }
 }/*# sourceMappingURL=main.css.map */

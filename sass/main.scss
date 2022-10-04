@@ -281,9 +281,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         @media (max-width:360px) {
           width: 60px !important;
         }
-        // @media (min-width:600px) {
-        //   width: 70px !important;
-        // }
+        
         }
         #year{
           width:79px;
@@ -295,9 +293,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           @media (max-width:360px) {
             width: 60px !important;
           }
-          // @media (min-width:600px) {
-          //   width: 70px !important;
-          // }
+         
         }
         #cvc{
           padding-left:.6rem;
@@ -316,13 +312,13 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       }
       #btn{
         all: unset;
-        color:$White;
+        color:$Light-grayish-violet;
         background-color: $Very-dark-violet;
         width:311px;
-        height:60px;
+        height:50px;
         border-radius: 10px;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1rem;
         cursor: pointer;
         margin-top: 1rem;
 
@@ -331,7 +327,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
         @media (min-width:600px) {
           width: 350px !important;
-          height: 55px !important;
+          height: 50px !important;
         }
         
       }
@@ -348,10 +344,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   top:-15px;
   color: $Red-errors;
   font-size: 13px;
-  // height: 0;
-  // overflow: hidden;
-  // transition: .5s;
-  // visibility: hidden;
 }
 
 .error-card-no{
@@ -404,11 +396,14 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 }
 
 .card__complete-state{
-  width: 100%;
+  display: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 992px) and (max-width: 1175px){
+    justify-content: end !important;
+    }
 
   .complete-icon{
     width:100%;
@@ -424,23 +419,21 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     color:$Dark-grayish-violet;
   }
   .complete-state-Btn{
-    all: unset;
-        color:$White;
+        all: unset;
+        color:$Light-grayish-violet;
         background-color: $Very-dark-violet;
         width:311px;
-        height:60px;
+        height:50px;
         border-radius: 10px;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1rem;
         cursor: pointer;
-        margin-top: 1rem;
-
+        margin:2.5rem 0;
         @media (max-width:360px) {
           width: 250px !important;
         }
         @media (min-width:600px) {
           width: 350px !important;
-          height: 55px !important;
         }
   }
 
