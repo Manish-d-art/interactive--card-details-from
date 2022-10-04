@@ -416,4 +416,15 @@
   .error-date-cvc .error-cvc {
     transform: translate(38px, -13px);
   }
+}
+
+.card__complete-state {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__complete-state .complete-icon {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
