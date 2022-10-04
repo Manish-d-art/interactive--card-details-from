@@ -218,7 +218,7 @@
 .card .card__section2 ::placeholder {
   color: rgb(211, 205, 205);
 }
-.card .card__section2 form .first-input-container {
+.card .card__section2 form .first-input-container, .card .card__section2 form .second-input-container {
   height: 109px;
 }
 .card .card__section2 form #name {
