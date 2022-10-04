@@ -216,7 +216,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       #fname{
         width: 311px;
         height: 45px;
-        margin: .5rem 0 1.3rem;
+        margin: .5rem 0 1.1rem;
         padding-left:.6rem;
         font-size: 1.1rem;
         color:$Dark-grayish-violet;
@@ -233,7 +233,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       #card-number{
         width: 311px;
         height: 45px;
-        margin: .5rem 0 1.3rem;
+        margin: .5rem 0 1.1rem;
         padding-left:.5rem;
         font-size: 1.1rem;
         letter-spacing: 1px;
@@ -261,7 +261,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       .card__date-cvc-input{
         display: flex;
         justify-content: space-between;
-        margin: .5rem 0 1.3rem;
+        margin: .5rem 0 1.1rem;
         width: 315px;
         @media (max-width:360px) {
           width: 250px !important;
@@ -342,11 +342,16 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 }
 
 // js
+
 .error-name{
   position: relative;
   top:-15px;
   color: $Red-errors;
   font-size: 13px;
+  // height: 0;
+  // overflow: hidden;
+  // transition: .5s;
+  // visibility: hidden;
 }
 
 .error-card-no{
@@ -394,7 +399,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     }
     @media (min-width:600px) {
       transform: translate(38px, -13px);
-      
     }
   }
 }

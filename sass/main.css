@@ -221,7 +221,7 @@
 .card .card__section2 form #fname {
   width: 311px;
   height: 45px;
-  margin: 0.5rem 0 1.3rem;
+  margin: 0.5rem 0 1.1rem;
   padding-left: 0.6rem;
   font-size: 1.1rem;
   color: hsl(279deg, 6%, 55%);
@@ -241,7 +241,7 @@
 .card .card__section2 form #card-number {
   width: 311px;
   height: 45px;
-  margin: 0.5rem 0 1.3rem;
+  margin: 0.5rem 0 1.1rem;
   padding-left: 0.5rem;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -272,7 +272,7 @@
 .card .card__section2 form .card__date-cvc-input {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem 0 1.3rem;
+  margin: 0.5rem 0 1.1rem;
   width: 315px;
 }
 @media (max-width: 360px) {
