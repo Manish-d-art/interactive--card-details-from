@@ -8,3 +8,9 @@ const errorCardNumber=document.querySelector('#error-card-no');
 
 const month=document.querySelector('#month');
 const monthError=document.querySelector('.error-month');
+
+const year=document.querySelector('#year');
+const errorYear=document.querySelector('.error-year');
+
+const cvc=document.querySelector('#cvc');
+const errorCVC=document.querySelector('.error-cvc');
