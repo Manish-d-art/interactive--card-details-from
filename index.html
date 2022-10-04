@@ -38,7 +38,7 @@
     </div>
 
     <div class="card__section2">
-      <form>
+      <form style="display:none">
         <label for="fname">CARDHOLDER NAME</label><br>
         <input type="text" id="fname" name="fname" placeholder="e.g. Jane Appleseed"><br>
         <p class="error-name">Enter your full name</p>
@@ -61,9 +61,13 @@
           <p class="error-cvc">can't be blank</p>
         </div>
         <button id="btn" type="submit" form="nameform" value="Submit">Confirm</button>
-
-
       </form>
+      <div class="card__complete-state">
+        <picture>
+          <img class="complete-icon" src="/assets/images/icon-complete.svg" alt="comp-icon">
+        </picture>
+        <p class="complete-state-thnku">thank you</p>
+      </div>
     </div>
 
   </main>
