@@ -2,6 +2,7 @@
  
 const Name=document.querySelector('#name');
 const errorName=document.querySelector('.error-name');
+const cardOwner=document.querySelector('.card-details__text');
 
 const cardNumber=document.querySelector('#card-number');
 const errorCardNumber=document.querySelector('.error-card-no');
@@ -18,21 +19,29 @@ const errorCVC=document.querySelector('.error-cvc');
 const formFillUp=document.querySelector('.form-fill-up');
 const cradCompleteState=document.querySelector('.card-complete-state');
 
+
+//name input
 let nameUpdate;
 Name.addEventListener('keyup',function(){
   const nameValue=Name.value;
+  cardOwner.textContent="";
+
   if(/\d/.test(nameValue)){ 
-    
     errorName.textContent="Invalid input";
     nameUpdate=nameValue.slice(0,nameValue.length-1);
     Name.value=nameUpdate;
-    console.log(2);
+    cardOwner.textContent=nameUpdate;
+    // console.log(2);
   }
   else if(nameValue === ''){
     errorName.textContent="Name cannot be empty"; 
   }
   else{
     nameUpdate=nameValue;
+    cardOwner.textContent=nameUpdate;
     errorName.textContent="";
   }
 });
+
+//card number input
+// cardNumber.addEventListener('keyup',function())
