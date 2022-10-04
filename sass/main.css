@@ -286,7 +286,7 @@
   }
 }
 .card .card__section2 form .card__date-cvc-input #month {
-  width: 70px;
+  width: 79px;
   height: 45px;
   font-size: 1.1rem;
   text-align: center;
@@ -295,16 +295,11 @@
 }
 @media (max-width: 360px) {
   .card .card__section2 form .card__date-cvc-input #month {
-    width: 50px !important;
-  }
-}
-@media (min-width: 600px) {
-  .card .card__section2 form .card__date-cvc-input #month {
-    width: 70px !important;
+    width: 60px !important;
   }
 }
 .card .card__section2 form .card__date-cvc-input #year {
-  width: 70px;
+  width: 79px;
   height: 45px;
   font-size: 1.1rem;
   text-align: center;
@@ -313,30 +308,25 @@
 }
 @media (max-width: 360px) {
   .card .card__section2 form .card__date-cvc-input #year {
-    width: 50px !important;
-  }
-}
-@media (min-width: 600px) {
-  .card .card__section2 form .card__date-cvc-input #year {
-    width: 70px !important;
+    width: 60px !important;
   }
 }
 .card .card__section2 form .card__date-cvc-input #cvc {
   padding-left: 0.6rem;
   font-size: 1.1rem;
-  width: 150px;
+  width: 135px;
   height: 45px;
   border: 0.5px solid hsl(279deg, 6%, 55%);
   border-radius: 8px;
 }
 @media (max-width: 360px) {
   .card .card__section2 form .card__date-cvc-input #cvc {
-    width: 140px !important;
+    width: 120px !important;
   }
 }
 @media (min-width: 600px) {
   .card .card__section2 form .card__date-cvc-input #cvc {
-    width: 190px !important;
+    width: 161px !important;
   }
 }
 .card .card__section2 form #btn {
@@ -368,4 +358,62 @@
   top: -15px;
   color: hsl(0deg, 100%, 66%);
   font-size: 13px;
+}
+
+.error-card-no {
+  position: relative;
+  position: relative;
+  top: -15px;
+  color: hsl(0deg, 100%, 66%);
+  font-size: 13px;
+}
+
+.error-date-cvc {
+  font-size: 11px;
+  display: flex;
+  color: hsl(0deg, 100%, 66%);
+  width: 311px;
+}
+@media (max-width: 360px) {
+  .error-date-cvc {
+    width: 250px !important;
+    font-size: 9px;
+  }
+}
+@media (min-width: 600px) {
+  .error-date-cvc {
+    width: 350px !important;
+  }
+}
+.error-date-cvc .error-month {
+  position: relative;
+  transform: translate(0, -13px);
+}
+.error-date-cvc .error-year {
+  position: relative;
+  transform: translate(13px, -13px);
+}
+@media (max-width: 360px) {
+  .error-date-cvc .error-year {
+    transform: translate(5px, -13px) !important;
+  }
+}
+@media (min-width: 600px) {
+  .error-date-cvc .error-year {
+    transform: translate(19px, -13px);
+  }
+}
+.error-date-cvc .error-cvc {
+  position: relative;
+  transform: translate(30px, -13px);
+}
+@media (max-width: 360px) {
+  .error-date-cvc .error-cvc {
+    transform: translate(12px, -13px) !important;
+  }
+}
+@media (min-width: 600px) {
+  .error-date-cvc .error-cvc {
+    transform: translate(38px, -13px);
+  }
 }/*# sourceMappingURL=main.css.map */
