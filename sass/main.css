@@ -437,4 +437,27 @@
 .card__complete-state .complete-state-text {
   font-size: 0.9rem;
   color: hsl(279deg, 6%, 55%);
+}
+.card__complete-state .complete-state-Btn {
+  all: unset;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  width: 311px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+@media (max-width: 360px) {
+  .card__complete-state .complete-state-Btn {
+    width: 250px !important;
+  }
+}
+@media (min-width: 600px) {
+  .card__complete-state .complete-state-Btn {
+    width: 350px !important;
+    height: 55px !important;
+  }
 }/*# sourceMappingURL=main.css.map */

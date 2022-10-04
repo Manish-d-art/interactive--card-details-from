@@ -423,5 +423,25 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     font-size: .9rem;
     color:$Dark-grayish-violet;
   }
+  .complete-state-Btn{
+    all: unset;
+        color:$White;
+        background-color: $Very-dark-violet;
+        width:311px;
+        height:60px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+
+        @media (max-width:360px) {
+          width: 250px !important;
+        }
+        @media (min-width:600px) {
+          width: 350px !important;
+          height: 55px !important;
+        }
+  }
 
 }
