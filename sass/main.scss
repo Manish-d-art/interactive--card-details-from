@@ -413,5 +413,15 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   .complete-icon{
     width:100%;
   }
+  .complete-state-thanku{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin: 1.5rem 0 1rem;
+  }
+  .complete-state-text{
+    font-size: .9rem;
+    color:$Dark-grayish-violet;
+  }
 
 }
