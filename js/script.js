@@ -47,14 +47,17 @@ Name.addEventListener('keyup',function(){
 let numberUpdate;
 cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
-  if( (evt.which < 48 || evt.which > 57)){
-    console.log(2);
-    cardNumber.value=numberUpdate;
-    errorCardNumber.textContent="wrong format, numbers only";
-  }
-  else if(cardNumberValue === ''){
+  
+  if(cardNumberValue === ''){
     errorCardNumber.textContent="Please enter card number";
   }
+
+  else if( (evt.which < 48 || evt.which > 57)){
+    if(!(evt.key === 'Backspace'))
+      cardNumber.value=numberUpdate;
+    errorCardNumber.textContent="wrong format, numbers only";
+  }
+  
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
