@@ -152,10 +152,17 @@ cvc.addEventListener('keyup',function(evt){
   }
 });
 
+//confirm btn
 confirmBtn.addEventListener('click',function(e){
   e.preventDefault();
-  if(!(/\s/g.test(Name.value))){
+  if(Name.value===""){
+    errorName.textContent="Name cannot be empty"; 
+  }
+  else if(!(/\s/g.test(Name.value))){
     errorName.textContent="Enter fullname";
+  }
+  else if(Name.value=""){
+    errorName.textContent="Name cannot be empty"; 
   }
   if((cardNumber.value.length !== 16)){
     errorCardNumber.textContent="Must be of 16-digits";
@@ -169,7 +176,6 @@ confirmBtn.addEventListener('click',function(e){
   if(year.value<22){
     errorYear.textContent="Invalid year";
   }
-  
   
   if((/\s/g.test(Name.value)) && (cardNumber.value.length === 16) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
     formFillUp.classList.add('hidden');
