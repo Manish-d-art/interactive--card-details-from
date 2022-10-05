@@ -23,7 +23,7 @@ const cvcNum=document.querySelector('.card__text1');
 const confirmBtn=document.querySelector('#btn');
 
 const formFillUp=document.querySelector('.form-fill-up');
-const cradCompleteState=document.querySelector('.card-complete-state');
+const formCompleteState=document.querySelector('.card__complete-state');
 
 
 //name input
@@ -157,10 +157,10 @@ confirmBtn.addEventListener('click',function(e){
   if(!(/\s/g.test(Name.value))){
     errorName.textContent="Enter fullname";
   }
-  if(! (cardNumber.length === 16)){
+  if((cardNumber.value.length !== 16)){
     errorCardNumber.textContent="Must be of 16-digits";
   }
-  if(! (cvc.length === 3)){
+  if((cvc.value.length < 3)){
     errorCVC.textContent="Must be of 3-digits";
   }
   if(month.value>12 || month.value<1){
@@ -170,8 +170,10 @@ confirmBtn.addEventListener('click',function(e){
     errorYear.textContent="Invalid year";
   }
   
-  // if(/\s/g.test(s) && cardNumber.length === 16 && month.v ){
-
-  // }
+  
+  if((/\s/g.test(Name.value)) && (cardNumber.value.length === 16) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
+    formFillUp.classList.add('hidden');
+    formCompleteState.classList.remove('hidden');
+  }
 });
 
