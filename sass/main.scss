@@ -138,19 +138,22 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           color: $Light-grayish-violet;
           letter-spacing: 2px;
           font-size: 1.2rem;
-          width: 220px;
+          width: 251px;
           position: relative;
           transform: translateY(60px);
           font-weight: 500;
           @media (max-width:360px) {
             letter-spacing: 2px;
             font-size: 1rem;
+            width: 220px;
+
           }
           @media (min-width:600px) 
           {
             letter-spacing: 3px;
             font-size: 1.5rem;
             margin-top: 1rem;
+            width: 324px !important;
           }
       }
       
