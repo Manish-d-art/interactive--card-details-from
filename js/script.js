@@ -32,7 +32,6 @@ Name.addEventListener('keyup',function(){
     nameUpdate=nameValue.slice(0,nameValue.length-1);
     Name.value=nameUpdate;
     cardOwner.textContent=nameUpdate;
-    // console.log(2);
   }
   else if(nameValue === ''){
     errorName.textContent="Name cannot be empty"; 
@@ -54,13 +53,12 @@ cardNumber.addEventListener('keyup',function(evt){
   if((evt.key === " "))
       cardNumber.value=numberUpdate;
 
-  else if( 
-    // (evt.which < 48 || evt.which > 57)
-    isNaN(cardNumberValue)
-    ){
-    // if((evt.key === " "))
+  else if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
     errorCardNumber.textContent="wrong format, numbers only";
+  }
+  else if(cardNumberValue === ''){
+    errorCardNumber.textContent="Card number cannot be empty";
   }
   
   else{
@@ -68,5 +66,6 @@ cardNumber.addEventListener('keyup',function(evt){
     numberUpdate=cardNumberValue;
     cardNum.textContent=numberUpdate;
   }
+  
 });
 
