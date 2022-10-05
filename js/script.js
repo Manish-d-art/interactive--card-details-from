@@ -75,6 +75,16 @@ cardNumber.addEventListener('keyup',function(evt){
 let  monthNumber="";
 month.addEventListener('keyup',function(evt){
   const monthValue=month.value;
-  
+  if(isNaN(monthValue)){
+    monthError.textContent="Wrong";
+    month.value=monthNumber;
+  }
+  else if(monthValue === ""){
+    monthError.textContent="can't be blank";
+  }
+  else{
+    monthError.textContent="";
+    month.value=monthNumber;
+  }
 });
 
