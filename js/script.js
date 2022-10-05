@@ -10,6 +10,7 @@ const cardNum=document.querySelector('.card__text2');
 
 const month=document.querySelector('#month');
 const monthError=document.querySelector('.error-month');
+const dateMonth=document.querySelector('.date-month');
 
 const year=document.querySelector('#year');
 const errorYear=document.querySelector('.error-year');
@@ -32,9 +33,12 @@ Name.addEventListener('keyup',function(){
     nameUpdate=nameValue.slice(0,nameValue.length-1);
     Name.value=nameUpdate;
     cardOwner.textContent=nameUpdate;
+    // Name.style.border="thin solid red";
+    // Name.style.border = "thick solid red ";
   }
   else if(nameValue === ''){
     errorName.textContent="Name cannot be empty"; 
+    // Name.style.border="1px solid $activeInputBorder";
   }
   else{
     nameUpdate=nameValue;
@@ -91,8 +95,7 @@ month.addEventListener('keyup',function(evt){
   else{
     monthError.textContent="";
     monthUpdate=monthValue;
-   
-
+    dateMonth.textContent=monthUpdate.padStart(2,0);
   }
 });
 //year
