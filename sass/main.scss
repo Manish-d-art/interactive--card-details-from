@@ -81,7 +81,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
 
         @media (min-width:600px) 
-        // and (max-width:992px)
         {
           transform: translate(318px, 98px) !important;
           font-size: 1rem;
@@ -96,7 +95,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       transform: translate(-26px,96px);
       width: 300px;
       height: 170px;
-      
       background-image: url('/assets/images/bg-card-front.png');
       background-size: cover;
       background-repeat: no-repeat;
@@ -141,7 +139,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           letter-spacing: 2px;
           font-size: 1.2rem;
           width: 220px;
-          // text-align: center;
           position: relative;
           transform: translateY(60px);
           font-weight: 500;
@@ -176,7 +173,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
            padding: 0 1rem !important;
         }
         @media (min-width:600px)
-        //  and (max-width:992px)
          {
            padding: 0 2.5rem !important;
            margin-top: 1.2rem;
@@ -251,7 +247,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         color:$Dark-grayish-violet;
         border: .5px solid $Dark-grayish-violet;
         border-radius: 8px;
-
         @media (max-width:360px) {
           width: 250px !important;
         }
