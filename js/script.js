@@ -71,3 +71,10 @@ cardNumber.addEventListener('keyup',function(evt){
   
 });
 
+//month
+let  monthNumber="";
+month.addEventListener('keyup',function(evt){
+  const monthValue=month.value;
+  
+});
+
