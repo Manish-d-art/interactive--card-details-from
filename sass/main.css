@@ -399,14 +399,22 @@
 .error-date-cvc .error-month {
   position: relative;
   transform: translate(0, -13px);
+  width: 78px;
+}
+@media (max-width: 360px) {
+  .error-date-cvc .error-month {
+    width: 62px !important;
+  }
 }
 .error-date-cvc .error-year {
   position: relative;
   transform: translate(13px, -13px);
+  width: 84px;
 }
 @media (max-width: 360px) {
   .error-date-cvc .error-year {
     transform: translate(5px, -13px) !important;
+    width: 62px;
   }
 }
 @media (min-width: 600px) {
@@ -415,12 +423,14 @@
   }
 }
 .error-date-cvc .error-cvc {
+  width: 84px;
   position: relative;
   transform: translate(30px, -13px);
 }
 @media (max-width: 360px) {
   .error-date-cvc .error-cvc {
     transform: translate(12px, -13px) !important;
+    width: 62px;
   }
 }
 @media (min-width: 600px) {
