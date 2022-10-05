@@ -400,6 +400,7 @@
   position: relative;
   transform: translate(0, -13px);
   width: 78px;
+  height: 13px;
 }
 @media (max-width: 360px) {
   .error-date-cvc .error-month {
@@ -410,6 +411,7 @@
   position: relative;
   transform: translate(13px, -13px);
   width: 84px;
+  height: 13px;
 }
 @media (max-width: 360px) {
   .error-date-cvc .error-year {
@@ -424,6 +426,7 @@
 }
 .error-date-cvc .error-cvc {
   width: 84px;
+  height: 13px;
   position: relative;
   transform: translate(30px, -13px);
 }
