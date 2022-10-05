@@ -72,19 +72,19 @@ cardNumber.addEventListener('keyup',function(evt){
 });
 
 //month
-let  monthNumber="";
+let  monthUpdate="";
 month.addEventListener('keyup',function(evt){
   const monthValue=month.value;
   if(isNaN(monthValue)){
-    monthError.textContent="Wrong";
-    month.value=monthNumber;
+    monthError.textContent="Wrong format";
+    month.value=monthUpdate;
   }
   else if(monthValue === ""){
     monthError.textContent="can't be blank";
   }
   else{
     monthError.textContent="";
-    month.value=monthNumber;
+    monthUpdate=monthValue;
   }
 });
 
