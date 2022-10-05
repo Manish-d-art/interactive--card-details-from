@@ -403,13 +403,13 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   }
 
   .error-cvc{
-    width: 84px;
+    width: 90px;
     height: 13px;
     position: relative;
     transform: translate(30px, -13px);
     @media (max-width:360px) {
       transform: translate(12px, -13px) !important;
-      width: 62px;
+      width: 84px;
     }
     @media (min-width:600px) {
       transform: translate(38px, -13px);
