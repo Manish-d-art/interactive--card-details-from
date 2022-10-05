@@ -45,6 +45,7 @@ Name.addEventListener('keyup',function(){
 
 //card number input
 let numberUpdate="";
+let count1=0;
 cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
   if(cardNumberValue === ''){
@@ -67,6 +68,8 @@ cardNumber.addEventListener('keyup',function(evt){
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
     cardNum.textContent=numberUpdate;
+    if(count1<16)
+    count1++;
   }
   
 });
@@ -88,9 +91,10 @@ month.addEventListener('keyup',function(evt){
   else{
     monthError.textContent="";
     monthUpdate=monthValue;
+   
+
   }
 });
-
 //year
 let  yearUpdate="";
 year.addEventListener('keyup',function(evt){
@@ -112,6 +116,7 @@ year.addEventListener('keyup',function(evt){
 
 //cvc
 let  cvcUpdate="";
+let count2=0;
 cvc.addEventListener('keyup',function(evt){
   const cvcValue=cvc.value;
   if(isNaN(cvcValue)){
@@ -126,6 +131,8 @@ cvc.addEventListener('keyup',function(evt){
   else{
     errorCVC.textContent="";
     cvcUpdate=cvcValue;
+    if(count2<3)
+      count2++;
   }
 });
 
