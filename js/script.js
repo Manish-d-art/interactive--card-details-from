@@ -20,6 +20,8 @@ const cvc=document.querySelector('#cvc');
 const errorCVC=document.querySelector('.error-cvc');
 const cvcNum=document.querySelector('.card__text1');
 
+const confirmBtn=document.querySelector('#btn');
+
 const formFillUp=document.querySelector('.form-fill-up');
 const cradCompleteState=document.querySelector('.card-complete-state');
 
@@ -107,6 +109,7 @@ month.addEventListener('keyup',function(evt){
 let  yearUpdate="";
 year.addEventListener('keyup',function(evt){
   const yearValue=year.value;
+
   if(isNaN(yearValue)){
     errorYear.textContent="Wrong format";
     year.value=yearUpdate;
@@ -117,6 +120,7 @@ year.addEventListener('keyup',function(evt){
     yearUpdate="";
     dateYear.textContent="00";
   }
+  
   else{
     errorYear.textContent="";
     yearUpdate=yearValue;
@@ -146,5 +150,28 @@ cvc.addEventListener('keyup',function(evt){
     if(count2<3)
       count2++;
   }
+});
+
+confirmBtn.addEventListener('click',function(e){
+  e.preventDefault();
+  if(!(/\s/g.test(Name.value))){
+    errorName.textContent="Enter fullname";
+  }
+  if(! (cardNumber.length === 16)){
+    errorCardNumber.textContent="Must be of 16-digits";
+  }
+  if(! (cvc.length === 3)){
+    errorCVC.textContent="Must be of 3-digits";
+  }
+  if(month.value>12 || month.value<1){
+    monthError.textContent="Invalid month";
+  }
+  if(year.value<22){
+    errorYear.textContent="Invalid year";
+  }
+  
+  // if(/\s/g.test(s) && cardNumber.length === 16 && month.v ){
+
+  // }
 });
 
