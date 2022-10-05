@@ -14,9 +14,11 @@ const dateMonth=document.querySelector('.date-month');
 
 const year=document.querySelector('#year');
 const errorYear=document.querySelector('.error-year');
+const dateYear=document.querySelector('.date-year');
 
 const cvc=document.querySelector('#cvc');
 const errorCVC=document.querySelector('.error-cvc');
+const cvcNum=document.querySelector('.card__text1');
 
 const formFillUp=document.querySelector('.form-fill-up');
 const cradCompleteState=document.querySelector('.card-complete-state');
@@ -52,26 +54,27 @@ let numberUpdate="";
 let count1=0;
 cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
-  if(cardNumberValue === ''){
-    errorCardNumber.textContent="Please enter card number";
-    cardNum.textContent=numberUpdate;
-  }
-  if((evt.key === " "))
-      cardNumber.value=numberUpdate;
+  // if(cardNumberValue === ''){
+  //   errorCardNumber.textContent="Please enter card number";
+  //   cardNum.textContent=numberUpdate;
+  // }
+  // if((evt.key === " "))
+  //     cardNumber.value=numberUpdate;
 
-  else if(isNaN(cardNumberValue)){
+  // else 
+  if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
       errorCardNumber.textContent="wrong format, numbers only";
   }
   else if(cardNumberValue === ''){
     errorCardNumber.textContent="Card number cannot be empty";
     numberUpdate=cardNumberValue;
-    cardNum.textContent=numberUpdate;
+    cardNum.textContent="".padStart(16,0);
   }
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
-    cardNum.textContent=numberUpdate;
+    cardNum.textContent=numberUpdate.padEnd(16,0);
     if(count1<16)
     count1++;
   }
@@ -90,7 +93,8 @@ month.addEventListener('keyup',function(evt){
     monthError.textContent="can't be blank";
     month.value="";
     monthUpdate="";
-
+    dateMonth.textContent="00";
+    
   }
   else{
     monthError.textContent="";
@@ -98,6 +102,7 @@ month.addEventListener('keyup',function(evt){
     dateMonth.textContent=monthUpdate.padStart(2,0);
   }
 });
+
 //year
 let  yearUpdate="";
 year.addEventListener('keyup',function(evt){
@@ -110,10 +115,12 @@ year.addEventListener('keyup',function(evt){
     errorYear.textContent="can't be blank";
     year.value="";
     yearUpdate="";
+    dateYear.textContent="00";
   }
   else{
     errorYear.textContent="";
     yearUpdate=yearValue;
+    dateYear.textContent=yearUpdate.padStart(2,0);
   }
 });
 
@@ -130,10 +137,12 @@ cvc.addEventListener('keyup',function(evt){
     errorCVC.textContent="can't be blank";
     cvc.value="";
     cvcUpdate="";
+    cvcNum.textContent="";
   }
   else{
     errorCVC.textContent="";
     cvcUpdate=cvcValue;
+    cvcNum.textContent=cvcUpdate;
     if(count2<3)
       count2++;
   }
