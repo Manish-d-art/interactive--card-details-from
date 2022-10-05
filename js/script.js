@@ -49,6 +49,7 @@ cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
   if(cardNumberValue === ''){
     errorCardNumber.textContent="Please enter card number";
+    cardNum.textContent=numberUpdate;
   }
   if((evt.key === " "))
       cardNumber.value=numberUpdate;
@@ -59,6 +60,8 @@ cardNumber.addEventListener('keyup',function(evt){
   }
   else if(cardNumberValue === ''){
     errorCardNumber.textContent="Card number cannot be empty";
+    numberUpdate=cardNumberValue;
+    cardNum.textContent=numberUpdate;
   }
   else{
     errorCardNumber.textContent="";
