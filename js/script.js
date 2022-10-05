@@ -44,16 +44,20 @@ Name.addEventListener('keyup',function(){
 });
 
 //card number input
-let numberUpdate;
+let numberUpdate="";
 cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
-  
   if(cardNumberValue === ''){
     errorCardNumber.textContent="Please enter card number";
   }
+  if((evt.key === " "))
+      cardNumber.value=numberUpdate;
 
-  else if( (evt.which < 48 || evt.which > 57)){
-    if(!(evt.key === 'Backspace'))
+  else if( 
+    // (evt.which < 48 || evt.which > 57)
+    isNaN(cardNumberValue)
+    ){
+    // if((evt.key === " "))
       cardNumber.value=numberUpdate;
     errorCardNumber.textContent="wrong format, numbers only";
   }
