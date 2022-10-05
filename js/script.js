@@ -55,12 +55,11 @@ cardNumber.addEventListener('keyup',function(evt){
 
   else if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
-    errorCardNumber.textContent="wrong format, numbers only";
+      errorCardNumber.textContent="wrong format, numbers only";
   }
   else if(cardNumberValue === ''){
     errorCardNumber.textContent="Card number cannot be empty";
   }
-  
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
