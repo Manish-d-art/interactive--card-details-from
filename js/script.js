@@ -81,10 +81,29 @@ month.addEventListener('keyup',function(evt){
   }
   else if(monthValue === ""){
     monthError.textContent="can't be blank";
+    month.value="";
   }
   else{
     monthError.textContent="";
     monthUpdate=monthValue;
+  }
+});
+
+//month
+let  yearUpdate="";
+year.addEventListener('keyup',function(evt){
+  const yearValue=year.value;
+  if(isNaN(yearValue)){
+    errorYear.textContent="Wrong format";
+    year.value=yearUpdate;
+  }
+  else if(yearValue === ""){
+    errorYear.textContent="can't be blank";
+    year.value="";
+  }
+  else{
+    errorYear.textContent="";
+    yearUpdate=yearValue;
   }
 });
 
