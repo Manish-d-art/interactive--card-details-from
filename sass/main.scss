@@ -418,7 +418,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 }
 
 .card__complete-state{
-  display: none !important;
+  // display: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,4 +459,8 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
   }
 
+}
+
+.hidden{
+  display: none;
 }

@@ -443,7 +443,6 @@
 }
 
 .card__complete-state {
-  display: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,4 +487,8 @@
   .card__complete-state .complete-state-Btn {
     width: 350px !important;
   }
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
