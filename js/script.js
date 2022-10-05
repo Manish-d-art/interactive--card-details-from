@@ -82,6 +82,8 @@ month.addEventListener('keyup',function(evt){
   else if(monthValue === ""){
     monthError.textContent="can't be blank";
     month.value="";
+    monthUpdate="";
+
   }
   else{
     monthError.textContent="";
@@ -89,7 +91,7 @@ month.addEventListener('keyup',function(evt){
   }
 });
 
-//month
+//year
 let  yearUpdate="";
 year.addEventListener('keyup',function(evt){
   const yearValue=year.value;
@@ -100,10 +102,30 @@ year.addEventListener('keyup',function(evt){
   else if(yearValue === ""){
     errorYear.textContent="can't be blank";
     year.value="";
+    yearUpdate="";
   }
   else{
     errorYear.textContent="";
     yearUpdate=yearValue;
+  }
+});
+
+//cvc
+let  cvcUpdate="";
+cvc.addEventListener('keyup',function(evt){
+  const cvcValue=cvc.value;
+  if(isNaN(cvcValue)){
+    errorCVC.textContent="Wrong format";
+    cvc.value=cvcUpdate;
+  }
+  else if(cvcValue === ""){
+    errorCVC.textContent="can't be blank";
+    cvc.value="";
+    cvcUpdate="";
+  }
+  else{
+    errorCVC.textContent="";
+    cvcUpdate=cvcValue;
   }
 });
 
