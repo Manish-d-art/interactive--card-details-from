@@ -6,6 +6,7 @@ const cardOwner=document.querySelector('.card-details__text');
 
 const cardNumber=document.querySelector('#card-number');
 const errorCardNumber=document.querySelector('.error-card-no');
+const cardNum=document.querySelector('.card__text2');
 
 const month=document.querySelector('#month');
 const monthError=document.querySelector('.error-month');
@@ -65,5 +66,7 @@ cardNumber.addEventListener('keyup',function(evt){
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
+    cardNum.textContent=numberUpdate;
   }
 });
+
