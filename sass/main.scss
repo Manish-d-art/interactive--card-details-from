@@ -132,27 +132,31 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           width:77px !important;
         }
       }
-
-      .card__text2{
-        display: inline-block;
-        color: $Light-grayish-violet;
-        letter-spacing: 2px;
-        font-size: 1.2rem;
-        width: 100%;
-        text-align: center;
-        position: relative;
-        transform: translateY(60px);
-        font-weight: 500;
-        @media (max-width:360px) {
+      .numberBlock{
+        display: flex;
+        justify-content: center;
+        .card__text2{
+          display: inline-block;
+          color: $Light-grayish-violet;
           letter-spacing: 2px;
-          font-size: 1rem;
-        }
-        @media (min-width:600px) 
-        {
-          letter-spacing: 3px;
-          font-size: 1.5rem;
-          margin-top: 1rem;
-        }
+          font-size: 1.2rem;
+          width: 220px;
+          // text-align: center;
+          position: relative;
+          transform: translateY(60px);
+          font-weight: 500;
+          @media (max-width:360px) {
+            letter-spacing: 2px;
+            font-size: 1rem;
+          }
+          @media (min-width:600px) 
+          {
+            letter-spacing: 3px;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+          }
+      }
+      
       }
 
       .card-details{
@@ -243,6 +247,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         padding-left:.5rem;
         font-size: 1.1rem;
         letter-spacing: 1px;
+        text-align: start;
         color:$Dark-grayish-violet;
         border: .5px solid $Dark-grayish-violet;
         border-radius: 8px;
