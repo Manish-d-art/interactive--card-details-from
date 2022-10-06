@@ -56,14 +56,7 @@ let numberUpdate="";
 let count1=0;
 cardNumber.addEventListener('keyup',function(evt){
   const cardNumberValue=cardNumber.value;
-  // if(cardNumberValue === ''){
-  //   errorCardNumber.textContent="Please enter card number";
-  //   cardNum.textContent=numberUpdate;
-  // }
-  // if((evt.key === " "))
-  //     cardNumber.value=numberUpdate;
-
-  // else 
+ 
   if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
       errorCardNumber.textContent="wrong format, numbers only";
@@ -161,9 +154,7 @@ confirmBtn.addEventListener('click',function(e){
   else if(!(/\s/g.test(Name.value))){
     errorName.textContent="Enter fullname";
   }
-  else if(Name.value=""){
-    errorName.textContent="Name cannot be empty"; 
-  }
+  
   if((cardNumber.value.length !== 16)){
     errorCardNumber.textContent="Must be of 16-digits";
   }
@@ -180,6 +171,7 @@ confirmBtn.addEventListener('click',function(e){
   if((/\s/g.test(Name.value)) && (cardNumber.value.length === 16) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
     formFillUp.classList.add('hidden');
     formCompleteState.classList.remove('hidden');
+    // document.querySelector('.card__section1').style.animation="anim .5s ease-in-out ";
   }
 });
 
