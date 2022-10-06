@@ -171,7 +171,7 @@ confirmBtn.addEventListener('click',function(e){
   if((/\s/g.test(Name.value)) && (cardNumber.value.length === 16) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
     formFillUp.classList.add('hidden');
     formCompleteState.classList.remove('hidden');
-    // document.querySelector('.card__section1').style.animation="anim .5s ease-in-out ";
+    formCompleteState.style.animation="anim .5s ease-in-out ";
   }
 });
 
