@@ -53,14 +53,14 @@ Name.addEventListener('keyup',function(){
 
 //card number input
 let numberUpdate="";
-let count1=0;
 cardNumber.addEventListener('keyup',function(evt){
   let cardNumberValue=cardNumber.value;
- 
+  
   if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
       errorCardNumber.textContent="wrong format, numbers only";
   }
+  
   else if(cardNumberValue === ''){
     errorCardNumber.textContent="Card number cannot be empty";
     numberUpdate=cardNumberValue;
@@ -70,12 +70,8 @@ cardNumber.addEventListener('keyup',function(evt){
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
-    console.log(numberUpdate.length);
     cardNum.textContent=numberUpdate.padEnd(16,0);
-    if(count1<16)
-    count1++;
   }
-  
 });
 
 
