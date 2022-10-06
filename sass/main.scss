@@ -417,8 +417,15 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   }
 }
 
+// @keyframes anim {
+//     10% {transform: skewY(5deg);}
+//     30% {transform: skewY(-5deg);}
+//     50% {transform: skewY(5deg);}
+//     70% {transform: skewY(-5deg);}
+// }
 .card__complete-state{
   // display: none !important;
+  // animation: shake  .5s ease-in-out  ;
   display: flex;
   justify-content: center;
   align-items: center;
