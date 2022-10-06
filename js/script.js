@@ -55,7 +55,7 @@ Name.addEventListener('keyup',function(){
 let numberUpdate="";
 let count1=0;
 cardNumber.addEventListener('keyup',function(evt){
-  const cardNumberValue=cardNumber.value;
+  let cardNumberValue=cardNumber.value;
  
   if(isNaN(cardNumberValue)){
       cardNumber.value=numberUpdate;
@@ -66,15 +66,18 @@ cardNumber.addEventListener('keyup',function(evt){
     numberUpdate=cardNumberValue;
     cardNum.textContent="".padStart(16,0);
   }
+  
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
+    console.log(numberUpdate.length);
     cardNum.textContent=numberUpdate.padEnd(16,0);
     if(count1<16)
     count1++;
   }
   
 });
+
 
 //month
 let  monthUpdate="";
