@@ -53,25 +53,31 @@ Name.addEventListener('keyup',function(){
 
 //card number input
 let numberUpdate="";
-cardNumber.addEventListener('keyup',function(evt){
+cardNumber.addEventListener('input',function(e){
+  e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
   let cardNumberValue=cardNumber.value;
   
-  if(isNaN(cardNumberValue)){
-      cardNumber.value=numberUpdate;
-      errorCardNumber.textContent="wrong format, numbers only";
-  }
+  // if(isNaN(cardNumberValue)){
+  //     cardNumber.value=numberUpdate;
+  //     errorCardNumber.textContent="wrong format, numbers only";
+  // }
   
-  else if(cardNumberValue === ''){
+   if(cardNumberValue === ''){
     errorCardNumber.textContent="Card number cannot be empty";
     numberUpdate=cardNumberValue;
-    cardNum.textContent="".padStart(16,0);
+    cardNum.textContent=""
+    // .padStart(16,0).replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim()
+    ;
   }
   
   else{
     errorCardNumber.textContent="";
     numberUpdate=cardNumberValue;
-    cardNum.textContent=numberUpdate.padEnd(16,0);
+    cardNum.textContent=numberUpdate
+    // .padEnd(16,0).replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim()
+    ;
   }
+ 
 });
 
 
@@ -154,7 +160,7 @@ confirmBtn.addEventListener('click',function(e){
     errorName.textContent="Enter fullname";
   }
   
-  if((cardNumber.value.length !== 16)){
+  if((cardNumber.value.length !== 19)){
     errorCardNumber.textContent="Must be of 16-digits";
   }
   if((cvc.value.length < 3)){
@@ -167,10 +173,11 @@ confirmBtn.addEventListener('click',function(e){
     errorYear.textContent="Invalid year";
   }
   
-  if((/\s/g.test(Name.value)) && (cardNumber.value.length === 16) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
+  if((/\s/g.test(Name.value)) && (cardNumber.value.length === 19) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
     formFillUp.classList.add('hidden');
     formCompleteState.classList.remove('hidden');
     formCompleteState.style.animation="anim .5s ease-in-out ";
+    console.log(2);
   }
 });
 
