@@ -151,15 +151,22 @@ cvc.addEventListener('keyup',function(evt){
 });
 
 //confirm btn
+const displayMessage=(target1,target2,text1,text2='1px solid red') =>{
+  target1.textContent=text1;
+  target2.style.border=text2;
+}
+
 confirmBtn.addEventListener('click',function(e){
   e.preventDefault();
   if(Name.value===""){
-    errorName.textContent="Name cannot be empty"; 
-     Name.style.border = "1px solid red ";
+    // errorName.textContent="Name cannot be empty"; 
+    displayMessage(errorName,Name,"Name cannot be empty");
+    //  Name.style.border = "1px solid red ";
   }
   else if(!(/\s/g.test(Name.value))){
-    errorName.textContent="Enter fullname";
-    Name.style.border = "1px solid red ";
+    displayMessage(errorName,Name,"Enter fullname");
+    // errorName.textContent="Enter fullname";
+    // Name.style.border = "1px solid red ";
   }
   
   if((cardNumber.value.length !== 19)){
