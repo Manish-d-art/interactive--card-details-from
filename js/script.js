@@ -159,34 +159,23 @@ const displayMessage=(target1,target2,text1,text2='1px solid red') =>{
 confirmBtn.addEventListener('click',function(e){
   e.preventDefault();
   if(Name.value===""){
-    // errorName.textContent="Name cannot be empty"; 
     displayMessage(errorName,Name,"Name cannot be empty");
-    //  Name.style.border = "1px solid red ";
   }
   else if(!(/\s/g.test(Name.value))){
     displayMessage(errorName,Name,"Enter fullname");
-    // errorName.textContent="Enter fullname";
-    // Name.style.border = "1px solid red ";
   }
   
   if((cardNumber.value.length !== 19)){
     displayMessage(errorCardNumber,cardNumber,"Must be of 16-digits");
-    // errorCardNumber.textContent="Must be of 16-digits";
-    // cardNumber.style.border = "1px solid red ";
   }
   if((cvc.value.length < 3)){
     displayMessage(errorCVC,cvc,"Must be of 3-digits");
-    // errorCVC.textContent="Must be of 3-digits";
-    // cvc.style.border = "1px solid red ";
   }
   if(month.value>12 || month.value<1){
     displayMessage(monthError,month,"Invalid month");
-    // monthError.textContent="Invalid month";
-    // month.style.border = "1px solid red ";
   }
   if(year.value<22){
-    errorYear.textContent="Invalid year";
-    year.style.border = "1px solid red ";
+    displayMessage(errorYear,year,"Invalid year");
   }
   
   if((/\s/g.test(Name.value)) && (cardNumber.value.length === 19) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
