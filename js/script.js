@@ -180,8 +180,9 @@ confirmBtn.addEventListener('click',function(e){
     // cvc.style.border = "1px solid red ";
   }
   if(month.value>12 || month.value<1){
-    monthError.textContent="Invalid month";
-    month.style.border = "1px solid red ";
+    displayMessage(monthError,month,"Invalid month");
+    // monthError.textContent="Invalid month";
+    // month.style.border = "1px solid red ";
   }
   if(year.value<22){
     errorYear.textContent="Invalid year";
