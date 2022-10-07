@@ -172,16 +172,17 @@ confirmBtn.addEventListener('click',function(e){
   }
   if(month.value>12 || month.value<1){
     monthError.textContent="Invalid month";
+    month.style.border = "1px solid red ";
   }
   if(year.value<22){
     errorYear.textContent="Invalid year";
+    year.style.border = "1px solid red ";
   }
   
   if((/\s/g.test(Name.value)) && (cardNumber.value.length === 19) && (month.value<=12 || month.value>=1) && (year.value > 22) ){
     formFillUp.classList.add('hidden');
     formCompleteState.classList.remove('hidden');
     formCompleteState.style.animation="anim .5s ease-in-out ";
-    console.log(2);
   }
 });
 
