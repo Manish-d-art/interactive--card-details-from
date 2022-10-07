@@ -155,16 +155,20 @@ confirmBtn.addEventListener('click',function(e){
   e.preventDefault();
   if(Name.value===""){
     errorName.textContent="Name cannot be empty"; 
+     Name.style.border = "1px solid red ";
   }
   else if(!(/\s/g.test(Name.value))){
     errorName.textContent="Enter fullname";
+    Name.style.border = "1px solid red ";
   }
   
   if((cardNumber.value.length !== 19)){
     errorCardNumber.textContent="Must be of 16-digits";
+    cardNumber.style.border = "1px solid red ";
   }
   if((cvc.value.length < 3)){
     errorCVC.textContent="Must be of 3-digits";
+    cvc.style.border = "1px solid red ";
   }
   if(month.value>12 || month.value<1){
     monthError.textContent="Invalid month";
