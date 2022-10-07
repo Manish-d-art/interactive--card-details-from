@@ -170,12 +170,14 @@ confirmBtn.addEventListener('click',function(e){
   }
   
   if((cardNumber.value.length !== 19)){
-    errorCardNumber.textContent="Must be of 16-digits";
-    cardNumber.style.border = "1px solid red ";
+    displayMessage(errorCardNumber,cardNumber,"Must be of 16-digits");
+    // errorCardNumber.textContent="Must be of 16-digits";
+    // cardNumber.style.border = "1px solid red ";
   }
   if((cvc.value.length < 3)){
-    errorCVC.textContent="Must be of 3-digits";
-    cvc.style.border = "1px solid red ";
+    displayMessage(errorCVC,cvc,"Must be of 3-digits");
+    // errorCVC.textContent="Must be of 3-digits";
+    // cvc.style.border = "1px solid red ";
   }
   if(month.value>12 || month.value<1){
     monthError.textContent="Invalid month";
