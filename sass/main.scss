@@ -142,24 +142,24 @@ $Very-dark-violet: hsl(278, 68%, 11%);
           display: inline-block;
           color: $Light-grayish-violet;
           font-size: 1.2rem;
-          width: 251px;
-          height: 28px;
+          width: 15.6875rem;
+          height: 1.75rem;
           position: relative;
-          transform: translateY(60px);
+          transform: translateY(3.75rem);
           font-weight: 500;
           text-align: start;
-          @media (max-width:360px) {
-            letter-spacing: 2px;
+          @media (max-width:22.5rem) {
+            letter-spacing: 0.125rem;
             font-size: 1rem;
-            width: 216px;
-            height: 20px;
+            width: 13.5rem;
+            height: 1.25rem;
           }
-          @media (min-width:600px) 
+          @media (min-width:37.5rem) 
           {
-            letter-spacing: 3px;
+            letter-spacing: 0.1875rem;
             font-size: 1.5rem;
             margin-top: 1rem;
-            width: 324px !important;
+            width: 20.25rem !important;
           }
       }
       
@@ -171,17 +171,17 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         padding: 0 1.5rem;
         display: flex;
         justify-content: space-between;
-        font-size: 10px; 
-        letter-spacing: 1px;
+        font-size: 0.625rem; 
+        letter-spacing: 0.0625rem;
         text-transform: uppercase;
         color: $Light-grayish-violet;
         position: relative;
-        transform: translatey(75px);
+        transform: translatey(4.6875rem);
 
-        @media (max-width:360px){
+        @media (max-width:22.5rem){
            padding: 0 1rem !important;
         }
-        @media (min-width:600px)
+        @media (min-width:37.5rem)
          {
            padding: 0 2.5rem !important;
            margin-top: 1.2rem;
@@ -195,25 +195,25 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width:360px) {
+    @media (max-width:22.5rem) {
        padding:8rem 1rem !important;
    
       }
-    @media (min-width:992px) {
+    @media (min-width:62rem) {
       width: 63%;
     }
-    @media (max-width:992px) and (min-width:600px) {
+    @media (max-width:62rem) and (min-width:37.5rem) {
       padding: 12rem 2rem !important;      
     }
 
-    @media (min-width:992px) and (max-width:1175px) {
+    @media (min-width:62rem) and (max-width:73.4375rem) {
       justify-content: end !important;
       
     }
    
     label{
-      font-size: 12px;
-      letter-spacing: 2px;
+      font-size: 0.75rem;
+      letter-spacing: 0.125rem;
       font-weight: 700;
       color:$Very-dark-violet;
     }
@@ -223,52 +223,52 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     form{
 
       .first-input-container,.second-input-container{
-        height:109px;
+        height:6.8125rem;
       }
       
       #name{
         width: 311px;
-        height: 45px;
+        height: 2.8125rem;
         margin: .5rem 0 1.1rem;
         padding-left:.6rem;
         font-size: 1.1rem;
         color:$Dark-grayish-violet;
-        border: .5px solid $Dark-grayish-violet;
-        border-radius: 5px;
+        border: 0.0313rem solid $Dark-grayish-violet;
+        border-radius: 0.3125rem;
 
-        @media (max-width:360px) {
-          width: 250px !important;
+        @media (max-width:22.5rem) {
+          width: 15.625rem !important;
         }
-        @media (min-width:600px) {
-          width: 350px !important;
+        @media (min-width:37.5rem) {
+          width: 21.875rem !important;
         }
 
        
       }
       #card-number{
-        width: 311px;
-        height: 45px;
+        width: 19.4375rem;
+        height: 2.8125rem;
         margin: .5rem 0 1.1rem;
         padding-left:.5rem;
         font-size: 1.1rem;
         text-align: start;
         color:$Dark-grayish-violet;
-        border: .5px solid $Dark-grayish-violet;
-        border-radius: 8px;
-        @media (max-width:360px) {
-          width: 250px !important;
+        border: 0.0313rem solid $Dark-grayish-violet;
+        border-radius: 0.5rem;
+        @media (max-width:22.5rem) {
+          width: 15.625rem !important;
         }
-        @media (min-width:600px) {
-          width: 350px !important;
+        @media (min-width:37.5rem) {
+          width: 21.875rem !important;
         }
       }
 
       .card__date-cvc-label{
-        width:190px;
+        width:11.875rem;
         display: flex;
         justify-content: space-between;
-        @media (max-width:360px) {
-          width: 180px !important;
+        @media (max-width:22.5rem) {
+          width: 11.25rem !important;
         }
 
       }
@@ -276,24 +276,24 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         display: flex;
         justify-content: space-between;
         margin: .5rem 0 1.1rem;
-        width: 315px;
-        @media (max-width:360px) {
-          width: 250px !important;
+        width: 19.6875rem;
+        @media (max-width:22.5rem) {
+          width: 15.625rem !important;
         }
-        @media (min-width:600px) {
-          width: 350px !important;
+        @media (min-width:37.5rem) {
+          width: 21.875rem !important;
         }
 
         #month{
-        width:79px;
-        height: 45px;
+        width:4.9375rem;
+        height: 2.8125rem;
         font-size: 1.1rem;
         text-align: center;
-        border: .5px solid $Dark-grayish-violet;
-        border-radius: 8px;
+        border: 0.0313rem solid $Dark-grayish-violet;
+        border-radius: 0.5rem;
 
-        @media (max-width:360px) {
-          width: 60px !important;
+        @media (max-width:22.5rem) {
+          width: 3.75rem !important;
         }
         
         }
