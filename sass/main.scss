@@ -61,33 +61,33 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         height: 13.75rem;
       }
 
-      @media (max-width:360px) {
-        width: 240px;
-        height: 150px;
-        transform: translate(14px,10px);
+      @media (max-width:22.5rem) {
+        width: 15rem;
+        height: 9.375rem;
+        transform: translate(0.875rem,0.625rem);
       }
 
-      @media (min-width:992px) {
-        transform: translate(195px, 115px) !important;
-        width: 400px;
-        height: 224px;
+      @media (min-width:62rem) {
+        transform: translate(12.1875rem, 7.1875rem) !important;
+        width: 25rem;
+        height: 14rem;
       }
 
      
       .card__text1{
         position: relative;
-        transform: translate(237px,73px);
+        transform: translate(14.8125rem,4.5625rem);
         color:$Light-grayish-violet;
         display: inline-block;
 
-        @media (max-width:360px){
-          transform: translate(195px, 64px) !important;
+        @media (max-width:22.5rem){
+          transform: translate(12.1875rem, 4rem) !important;
           display: inline-block;
         }
 
-        @media (min-width:600px) 
+        @media (min-width:37.5rem) 
         {
-          transform: translate(318px, 98px) !important;
+          transform: translate(19.875rem, 6.125rem) !important;
           font-size: 1rem;
           display: inline-block;
         }
@@ -96,10 +96,10 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     .card__picture2{
       position: absolute;
       z-index: 2;
-      border-radius: 5px;
-      transform: translate(-26px,96px);
-      width: 300px;
-      height: 170px;
+      border-radius: 0.3125rem;
+      transform: translate(-1.625rem,6rem);
+      width: 18.75rem;
+      height: 10.625rem;
       background-image: url('/assets/images/bg-card-front.png');
       background-size: cover;
       background-repeat: no-repeat;
