@@ -105,34 +105,34 @@ $Very-dark-violet: hsl(278, 68%, 11%);
       background-repeat: no-repeat;
       background-position: center;
 
-      @media (min-width:600px) and (max-width:992px) {
-        transform: translate(-40px,135px);
-        width: 400px;
-        height: 220px;
+      @media (min-width:37.5rem) and (max-width:62rem) {
+        transform: translate(-2.5rem,8.4375rem);
+        width: 25rem;
+        height: 13.75rem;
       }
-      @media (max-width:360px) {
-        transform: translate(-15px,95px);
-        width: 240px;
-        height: 150px;
+      @media (max-width:22.5rem) {
+        transform: translate(-0.9375rem,5.9375rem);
+        width: 15rem;
+        height: 9.375rem;
       }
 
-      @media (min-width:992px) {
-        transform: translate(116px, -150px) !important;
-        width: 400px;
-        height: 224px;
+      @media (min-width:62rem) {
+        transform: translate(7.25rem, -9.375rem) !important;
+        width: 25rem;
+        height: 14rem;
       }
 
 
       .card-logo{
-        width:60px;
+        width:3.75rem;
         position: relative;
-        transform: translate(20px,20px);
+        transform: translate(1.25rem,1.25rem);
 
-        @media (max-width:360px) {
-          width:50px !important;
+        @media (max-width:22.5rem) {
+          width:3.125rem !important;
         }
-        @media (min-width:992px) {
-          width:77px !important;
+        @media (min-width:62rem) {
+          width:4.8125rem !important;
         }
       }
       .numberBlock{
