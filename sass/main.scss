@@ -299,28 +299,28 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
         #year{
           width:79px;
-          height: 45px;
+          height: 2.8125rem;
           font-size: 1.1rem;
           text-align: center;
-          border: .5px solid $Dark-grayish-violet;
-          border-radius: 8px;
-          @media (max-width:360px) {
-            width: 60px !important;
+          border: 0.0313rem solid $Dark-grayish-violet;
+          border-radius: 0.5rem;
+          @media (max-width:22.5rem) {
+            width: 3.75rem !important;
           }
          
         }
         #cvc{
           padding-left:.6rem;
           font-size: 1.1rem;
-          width: 135px;
-          height: 45px;
-          border: .5px solid $Dark-grayish-violet;
-          border-radius: 8px;
-          @media (max-width:360px) {
-            width: 120px !important;
+          width: 8.4375rem;
+          height: 2.8125rem;
+          border: 0.0313rem solid $Dark-grayish-violet;
+          border-radius: 0.5rem;
+          @media (max-width:22.5rem) {
+            width: 7.5rem !important;
           }
-          @media (min-width:600px) {
-            width: 161px !important;
+          @media (min-width:37.5rem) {
+            width: 10.0625rem !important;
           }
         }
       }
@@ -328,20 +328,20 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         all: unset;
         color:$Light-grayish-violet;
         background-color: $Very-dark-violet;
-        width:311px;
-        height:50px;
-        border-radius: 10px;
+        width:19.4375rem;
+        height:3.125rem;
+        border-radius: 0.625rem;
         text-align: center;
         font-size: 1rem;
         cursor: pointer;
         margin-top: 1rem;
 
-        @media (max-width:360px) {
-          width: 250px !important;
+        @media (max-width:22.5rem) {
+          width: 15.625rem !important;
         }
-        @media (min-width:600px) {
-          width: 350px !important;
-          height: 50px !important;
+        @media (min-width:37.5rem) {
+          width: 21.875rem !important;
+          height: 3.125rem !important;
         }
         
       }
@@ -355,76 +355,76 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 
 .error-name{
   position: relative;
-  top:-15px;
+  top:-0.9375rem;
   color: $Red-errors;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .error-card-no{
   position: relative;
   position: relative;
-  top:-15px;
+  top:-0.9375rem;
   color: $Red-errors;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .error-date-cvc{
-  font-size: 11px;
+  font-size: 0.6875rem;
   display: flex;
   color: $Red-errors;
-  width: 311px;
-  @media (max-width:360px) {
-    width: 250px !important;
-    font-size: 9px;
+  width: 19.4375rem;
+  @media (max-width:22.5rem) {
+    width: 15.625rem !important;
+    font-size: 0.5625rem;
   }
-  @media (min-width:600px) {
-    width: 350px !important;
+  @media (min-width:37.5rem) {
+    width: 21.875rem !important;
   }
 
   .error-month{
     position: relative;
-    transform: translate(0, -13px);
-    width: 78px;
-    height: 13px;
-    @media (max-width:360px) {
-    width: 62px !important;
+    transform: translate(0, -0.8125rem);
+    width: 4.875rem;
+    height: 0.8125rem;
+    @media (max-width:22.5rem) {
+    width: 3.875rem !important;
     }
   }
 
   .error-year{
     position: relative;
-    transform: translate(13px, -13px);
-    width: 84px;
-    height: 13px;
-    @media (max-width:360px) {
-      transform: translate(5px, -13px) !important;
-      width: 62px;
+    transform: translate(0.8125rem, -0.8125rem);
+    width: 5.25rem;
+    height: 0.8125rem;
+    @media (max-width:22.5rem) {
+      transform: translate(0.3125rem, -0.8125rem) !important;
+      width: 3.875rem;
     }
-    @media (min-width:600px) {
-    transform: translate(19px, -13px);
+    @media (min-width:37.5rem) {
+    transform: translate(1.1875rem, -0.8125rem);
     }
   }
 
   .error-cvc{
-    width: 104px;
-    height: 13px;
+    width: 6.5rem;
+    height: 0.8125rem;
     position: relative;
-    transform: translate(30px, -13px);
-    @media (max-width:360px) {
-      transform: translate(12px, -13px) !important;
-      width: 84px;
+    transform: translate(1.875rem, -0.8125rem);
+    @media (max-width:22.5rem) {
+      transform: translate(0.75rem, -0.8125rem) !important;
+      width: 5.25rem;
     }
-    @media (min-width:600px) {
-      transform: translate(38px, -13px);
+    @media (min-width:37.5rem) {
+      transform: translate(2.375rem, -0.8125rem);
     }
   }
 }
 
 @keyframes anim {
-    10% {transform: translateY(20px);}
-    30% {transform: translateY(10px);}
-    50% {transform: translateY(20px);}
-    70% {transform: translateY((10px));}
+    10% {transform: translateY(1.25rem);}
+    30% {transform: translateY(0.625rem);}
+    50% {transform: translateY(1.25rem);}
+    70% {transform: translateY((0.625rem));}
    
 }
 
@@ -433,7 +433,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media (min-width: 992px) and (max-width: 1175px){
+  @media (min-width: 62rem) and (max-width: 73.4375rem){
     justify-content: end !important;
     }
 
@@ -443,7 +443,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   .complete-state-thanku{
     text-transform: uppercase;
     font-size: 1.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
     margin: 1.5rem 0 1rem;
   }
   .complete-state-text{
@@ -454,18 +454,18 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         all: unset;
         color:$Light-grayish-violet;
         background-color: $Very-dark-violet;
-        width:311px;
-        height:50px;
-        border-radius: 10px;
+        width:19.4375rem;
+        height:3.125rem;
+        border-radius: 0.625rem;
         text-align: center;
         font-size: 1rem;
         cursor: pointer;
         margin:2.5rem 0;
-        @media (max-width:360px) {
-          width: 250px !important;
+        @media (max-width:22.5rem) {
+          width: 15.625rem !important;
         }
-        @media (min-width:600px) {
-          width: 350px !important;
+        @media (min-width:37.5rem) {
+          width: 21.875rem !important;
         }
   }
 
