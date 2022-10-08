@@ -248,7 +248,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         margin: .5rem 0 1.1rem;
         padding-left:.5rem;
         font-size: 1.1rem;
-        // letter-spacing: 3px;
         text-align: start;
         color:$Dark-grayish-violet;
         border: .5px solid $Dark-grayish-violet;
@@ -414,7 +413,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     }
     @media (min-width:600px) {
       transform: translate(38px, -13px);
-      // width: 104px;
     }
   }
 }
