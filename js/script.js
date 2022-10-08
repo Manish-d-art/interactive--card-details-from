@@ -63,7 +63,7 @@ cardNumber.addEventListener('input',function(e){
   // }
   
    if(cardNumberValue === ''){
-    errorCardNumber.textContent="Card number cannot be empty";
+    // errorCardNumber.textContent="Card number cannot be empty";
     numberUpdate=cardNumberValue;
     cardNum.textContent=""
     // .padStart(16,0).replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim()
