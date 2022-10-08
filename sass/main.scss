@@ -17,6 +17,10 @@ $Light-grayish-violet: hsl(270, 3%, 87%);
 $Dark-grayish-violet: hsl(279, 6%, 55%);
 $Very-dark-violet: hsl(278, 68%, 11%);
 
+
+//mixins
+
+
 .card{
   
   @media (min-width:992px) {
@@ -137,7 +141,6 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         .card__text2{
           display: inline-block;
           color: $Light-grayish-violet;
-          // letter-spacing: 4px;
           font-size: 1.2rem;
           width: 251px;
           height: 28px;
@@ -308,8 +311,8 @@ $Very-dark-violet: hsl(278, 68%, 11%);
         }
         #cvc{
           padding-left:.6rem;
-           font-size: 1.1rem;
-           width: 135px;
+          font-size: 1.1rem;
+          width: 135px;
           height: 45px;
           border: .5px solid $Dark-grayish-violet;
           border-radius: 8px;
