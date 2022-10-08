@@ -404,7 +404,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
   }
 
   .error-cvc{
-    width: 90px;
+    width: 104px;
     height: 13px;
     position: relative;
     transform: translate(30px, -13px);
@@ -414,6 +414,7 @@ $Very-dark-violet: hsl(278, 68%, 11%);
     }
     @media (min-width:600px) {
       transform: translate(38px, -13px);
+      // width: 104px;
     }
   }
 }
