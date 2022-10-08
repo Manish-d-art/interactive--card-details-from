@@ -11,6 +11,9 @@
     display: flex;
   }
 }
+.card .heading {
+  font-size: 0;
+}
 .card .card__section1 {
   background-image: url("/assets/images/bg-main-mobile.png");
   background-size: cover;

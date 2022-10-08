@@ -18,15 +18,15 @@ $Dark-grayish-violet: hsl(279, 6%, 55%);
 $Very-dark-violet: hsl(278, 68%, 11%);
 
 
-//mixins
-
-
 .card{
   
   @media (min-width:62rem) {
     display: flex;
   }
 
+  .heading{
+    font-size: 0;
+  }
   .card__section1{
     background-image: url("/assets/images/bg-main-mobile.png");
     @media (min-width:62rem) {
