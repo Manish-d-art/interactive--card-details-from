@@ -6,7 +6,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .card {
     display: flex;
   }
@@ -22,30 +22,30 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .card .card__section1 {
     background-image: url("/assets/images/bg-main-desktop.png");
     height: 100vh !important;
-    width: 441px;
+    width: 27.5625rem;
   }
 }
 .card .card__section1 .card__picture1 {
   position: absolute;
   z-index: 1;
-  border-radius: 5px;
-  transform: translate(25px, 0px);
-  width: 300px;
-  height: 170px;
+  border-radius: 0.3125rem;
+  transform: translate(1.5625rem, 0rem);
+  width: 18.75rem;
+  height: 10.625rem;
   background-image: url("/assets/images/bg-card-back.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 37.5rem) and (max-width: 62rem) {
   .card .card__section1 .card__picture1 {
-    transform: translate(100px, 10px);
-    width: 400px;
-    height: 220px;
+    transform: translate(6.25rem, 0.625rem);
+    width: 400zpx;
+    height: 13.75rem;
   }
 }
 @media (max-width: 360px) {
